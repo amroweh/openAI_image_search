@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Image Generator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/spinner.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="header-content">
+            <div id="header-left">OpenAI Image Generator</div>
+            <div id="header-right"><a href="https://github.com/openai/openai-node.git">Docs</a></div>
+        </div>
+    </header>
+    <main>
+        <section id="searchSection">
+            <h1>Describe Your Image</h1>
+            <form id="image-form">
+                <div class="form-control">
+                    <input type="text" id="prompt" placeholder="enter your description here...">
+                </div>
+                <div class="form-control">
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Generate Image</button>
+            </form>
+            
+        </section>
+        <section id="resultsSection">
+            <div class="msg">Error message here!</div>
+            <img id="spinner-img" src="./assets/loading.svg">
+            <img src="" alt="" id="image">
+        </section>
+    </main>
+    <footer>
+    </footer>
+
+</body>
+</html>

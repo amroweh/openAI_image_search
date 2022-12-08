@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+#header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 10px;
+    background-color: #222222;
+    color: white;    
+}
+
+#header-left{
+    font-weight: bold;
+}
+
+#header-right a{
+    color: white;
+}
+
+/* Search Section */
+
+#searchSection{
+    text-align: center;
+    padding: 35px 10px;
+    /* background-color: rgb(237, 180, 88); */
+    /* background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,176,1) 100%);
+}
+
+#searchSection h1{
+    margin-bottom: 25px;
+    color: white;
+}
+
+#searchSection #image-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: auto;
+}
+
+#searchSection #image-form .form-control{
+    width: 100%;
+    max-width: 600px;
+}
+
+#searchSection #image-form .form-control input, 
+#searchSection #image-form .form-control select{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 7px;
+    border: 1px solid darkgrey;
+    border-radius: 3px;
+}
+
+.btn{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    background-color: #222222;
+    color: white;
+    border: 1px solid #222222;
+    border-radius: 3px;
+    transition: all ease-in 200ms;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #09967c;
+    color: white;    
+    border: 1px solid #087460;
+}
+
+#searchSection .btn{
+    margin-top: 25px;
+}
+
+/* Results Section */
+#resultsSection{
+    min-height:400px;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.msg{        
+    display: none;
+    background-color: rgb(250, 241, 241);
+    color: rgb(195, 0, 0);
+    max-width: 300px;
+    padding: 10px 20px;
+    border: 1px solid rgb(195, 0, 0);
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.msg.show{
+    display: block;
+}
+
+#spinner-img{
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+
+#spinner-img.show{
+    display: block;
+}
+
+#image{
+    width: 100%;
+    max-width: 800px;
+}
